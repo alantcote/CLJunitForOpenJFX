@@ -16,10 +16,10 @@
 
 	<developers>
 		<developer>
-			<name>Alan T. Cote' Sr.</name>
-			<email>rfc11fan@rochester.rr.com</email>
-			<organization>self</organization>
-			<organizationUrl>https://sourceforge.net/u/rfc11fan/profile/</organizationUrl>
+			<name>Alan T. Cote'</name>
+			<email>alantcote@gmail.com</email>
+			<organization>Cote' Lab</organization>
+			<organizationUrl>https://github.com/alantcote</organizationUrl>
 		</developer>
 	</developers>
 
@@ -33,6 +33,29 @@
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+	
+	<description>Utilities used in JUnit testing with OpenJFX.</description>
+	
+	<organization>
+		<name>Cote' Lab</name>
+		<url>https://github.com/alantcote</url>
+	</organization>
+	
+	<inceptionYear>2014</inceptionYear>
+	
+	<scm>
+		<url>https://github.com/alantcote/CLJunitForOpenJFX.git</url>
+		<connection>scm:git:https://github.com/alantcote/CLJunitForOpenJFX.git</connection>
+	</scm>
+	
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/alantcote/issues</url>
+	</issueManagement>
+	
+	<version>0.0.2-SNAPSHOT</version>
+	
+	<groupId>net.sf.cotelab</groupId>
 
 	<build>
 		<plugins>
@@ -128,6 +151,11 @@
 	</profiles>
 
 	<dependencies>
+		<!-- <dependency>
+			<groupId>org.beanshell</groupId>
+			<artifactId>bsh-core</artifactId>
+			<version>2.0b4</version>
+		</dependency> -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
@@ -139,11 +167,6 @@
 			<version>2.11.0</version>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.2</version>
-		</dependency>
-		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-core</artifactId>
 			<version>2.2</version>
@@ -153,32 +176,15 @@
 			<artifactId>hamcrest-library</artifactId>
 			<version>2.2</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.beanshell</groupId>
-			<artifactId>bsh-core</artifactId>
-			<version>2.0b4</version>
-		</dependency> -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>17.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+		</dependency>
 	</dependencies>
-	<description>Utilities used in JUnit testing with OpenJFX.</description>
-	<organization>
-		<name>Cote Lab</name>
-		<url>http://cotelab.sourceforge.net/</url>
-	</organization>
-	<inceptionYear>2014</inceptionYear>
-	<scm>
-		<url>http://sourceforge.net/p/cotelab/svn/HEAD/tree/trunk/CLJUnitForOpenJFX/</url>
-		<connection>scm:svn:http://svn.code.sf.net/p/cotelab/svn/trunk/CLJUnitForOpenJFX/</connection>
-		<developerConnection>scm:svn:https://svn.code.sf.net/p/cotelab/svn/trunk/CLJUnitForOpenJFX/</developerConnection>
-	</scm>
-	<issueManagement>
-		<system>SourceForge Tickets</system>
-		<url>http://sourceforge.net/p/cotelab/tickets/</url>
-	</issueManagement>
-	<version>0.0.2-SNAPSHOT</version>
-	<groupId>net.sf.cotelab</groupId>
 </project>
