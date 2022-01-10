@@ -268,9 +268,39 @@
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-base</artifactId>
+			<version>${openjfx.version}</version>
+			<classifier>${javafx.classifier}</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>${openjfx.version}</version>
 			<classifier>${javafx.classifier}</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>${openjfx.version}</version>
+			<classifier>${javafx.classifier}</classifier>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>${openjfx.version}</version>
+			<classifier>${javafx.classifier}</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-media</artifactId>
+			<version>${openjfx.version}</version>
+			<classifier>${javafx.classifier}</classifier>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
