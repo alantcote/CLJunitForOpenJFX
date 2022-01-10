@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.sf.cotelab</groupId>
@@ -34,10 +32,10 @@
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>MM-dd-yyyy HH:mm</maven.build.timestamp.format>
 		<java.version>17</java.version>
-        <javafx.main.class>net.sf.cotelab.jfxrunner.JavaFXJUnit4Application</javafx.main.class>
+		<javafx.main.class>net.sf.cotelab.jfxrunner.JavaFXJUnit4Application</javafx.main.class>
 		<javafx.classifier>win</javafx.classifier>
 		<openjfx.version>18-ea+8</openjfx.version>
-        <!-- <main.class>${javafx.main.class}</main.class> -->
+		<!-- <main.class>${javafx.main.class}</main.class> -->
 	</properties>
 
 	<distributionManagement>
@@ -45,6 +43,10 @@
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
 	<organization>
@@ -145,6 +147,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
 				<version>3.0.1</version>
+				<configuration>
+					<gpgArguments>
+						<arg>--pinentry-mode</arg>
+						<arg>loopback</arg>
+					</gpgArguments>
+				</configuration>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
