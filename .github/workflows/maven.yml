@@ -23,4 +23,4 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: cd CLJUnitForOpenJFX ; ls -al ; mvn -B package --file pom.xml
+      run: cd CLJUnitForOpenJFX ; ls -al ; mvn -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw -B package --file pom.xml
