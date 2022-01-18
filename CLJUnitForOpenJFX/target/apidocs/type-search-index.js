@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"net.sf.cotelab.jfxrunner","l":"JavaFxJUnit4Application"},{"p":"net.sf.cotelab.jfxrunner","l":"JavaFxJUnit4ClassRunner"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"cotelab.jfxrunner","l":"JavaFxJUnit4Application"},{"p":"cotelab.jfxrunner","l":"JavaFxJUnit4ClassRunner"}];updateSearchResults();

@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import cotelab.jfxrunner.JavaFxJUnit4ClassRunner;
+
 /**
  * This is a sample test class for java fx tests.
  */

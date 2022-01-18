@@ -3,7 +3,7 @@
  *
  */
 module cljunitforopenjfx {
-	exports net.sf.cotelab.jfxrunner;
+	exports cotelab.jfxrunner;
 	
 	requires transitive javafx.graphics;
 	requires junit;

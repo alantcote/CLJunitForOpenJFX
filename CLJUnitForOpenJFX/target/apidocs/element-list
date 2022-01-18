@@ -1,2 +1,2 @@
 module:cljunitforopenjfx
-net.sf.cotelab.jfxrunner
+cotelab.jfxrunner

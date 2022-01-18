@@ -1,4 +1,4 @@
-package net.sf.cotelab.jfxrunner;
+package cotelab.jfxrunner;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
