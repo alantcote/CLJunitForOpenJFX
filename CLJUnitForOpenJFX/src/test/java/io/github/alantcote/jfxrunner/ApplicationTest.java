@@ -1,4 +1,4 @@
-package net.sf.cotelab.jfxrunner;
+package io.github.alantcote.jfxrunner;
 
 import static org.junit.Assert.*;
 import javafx.scene.Group;
@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import cotelab.jfxrunner.JavaFxJUnit4ClassRunner;
+import io.github.alantcote.jfxrunner.JavaFxJUnit4ClassRunner;
 
 /**
  * This is a sample test class for java fx tests.

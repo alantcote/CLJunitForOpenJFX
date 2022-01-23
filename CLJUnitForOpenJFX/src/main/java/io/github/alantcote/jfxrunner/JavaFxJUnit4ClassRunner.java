@@ -1,4 +1,4 @@
-package cotelab.jfxrunner;
+package io.github.alantcote.jfxrunner;
 
 import java.util.concurrent.CountDownLatch;
 
